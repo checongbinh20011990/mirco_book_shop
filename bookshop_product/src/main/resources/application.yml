@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: product-service
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3307/bookstore
+    username: root
+    password: admin123
+file:
+  path: /Users/binhcc/WorkSpace/Cybersoft/MicroService08/uploads
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+

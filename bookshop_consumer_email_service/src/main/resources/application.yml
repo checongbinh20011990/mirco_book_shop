@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: email-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nhoxlatuido@gmail.com
+    password: skgbsfydjmwajric
+    protocol: smtp
+    properties:
+        mail.smtp.auth: true
+        mail.smtp.starttls.enable: true
+        mail.debug: false
+  kafka:
+    bootstrap-servers: localhost:9094
+    consumer:
+      enable-auto-commit: true
+      auto-offset-reset: earliest
+      group-id: email-service-group
